@@ -1,0 +1,61 @@
+<footer class="bg-slate-50 dark:bg-[var(--background)] border-t border-slate-200 dark:border-white/5 py-12 md:py-20 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
+      <!-- Brand Column -->
+      <div class="space-y-6">
+        <a routerLink="/" class="text-xl md:text-2xl font-bold tracking-tighter text-brand-primary dark:text-brand-secondary">
+          BRANDIF<span class="text-brand-accent">.</span>
+        </a>
+        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+          London-based digital agency building the future of business through AI-driven strategies and intelligent design.
+        </p>
+        <div class="flex space-x-4">
+          <!-- Social Icons Placeholder -->
+          <a href="#" class="p-2 bg-white dark:bg-slate-900 rounded-lg shadow-sm hover:text-brand-primary transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <!-- Add more socials as needed -->
+        </div>
+      </div>
+
+      <!-- Links Columns -->
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-slate-900 dark:text-white">Services</h4>
+        <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+          <li><a routerLink="/services/ai-voice-agents" class="hover:text-brand-primary transition-colors">AI Voice Agents</a></li>
+          <li><a routerLink="/services/ai-chatbots" class="hover:text-brand-primary transition-colors">AI Chatbots</a></li>
+          <li><a routerLink="/services/web-app-development" class="hover:text-brand-primary transition-colors">Web & App Development</a></li>
+          <li><a routerLink="/services/seo-services" class="hover:text-brand-primary transition-colors">SEO Services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-slate-900 dark:text-white">Company</h4>
+        <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+          <li><a routerLink="/about" class="hover:text-brand-primary transition-colors">About Us</a></li>
+          <li><a routerLink="/work" class="hover:text-brand-primary transition-colors">Our Work</a></li>
+          <li><a routerLink="/insights" class="hover:text-brand-primary transition-colors">Insights</a></li>
+          <li><a routerLink="/careers" class="hover:text-brand-primary transition-colors">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-slate-900 dark:text-white">Resources</h4>
+        <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+          <li><a routerLink="/faqs" class="hover:text-brand-primary transition-colors">FAQs</a></li>
+          <li><a routerLink="/contact" class="hover:text-brand-primary transition-colors">Contact</a></li>
+          <li><a routerLink="/privacy" class="hover:text-brand-primary transition-colors">Privacy Policy</a></li>
+          <li><a routerLink="/terms" class="hover:text-brand-primary transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+      <p>&copy; {{ currentYear }} BRANDIF Digital Agency. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-brand-primary transition-colors">Cookies</a>
+        <a href="#" class="hover:text-brand-primary transition-colors">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>

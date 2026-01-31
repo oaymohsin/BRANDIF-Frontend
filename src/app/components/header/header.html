@@ -1,0 +1,88 @@
+<header class="fixed top-0 left-0 w-full z-50 glass dark:glass-dark transition-all duration-300">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a routerLink="/" class="text-xl md:text-2xl font-bold tracking-tighter text-brand-primary dark:text-brand-secondary">
+          BRANDIF<span class="text-brand-accent">.</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a routerLink="/" class="text-sm font-medium hover:text-brand-primary transition-colors">Home</a>
+        
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <button (click)="toggleServices()" class="flex items-center text-sm font-medium hover:text-brand-primary transition-colors focus:outline-none">
+            Services
+            <svg class="ml-1 h-4 w-4 transition-transform duration-200" [class.rotate-180]="isServicesOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <div *ngIf="isServicesOpen" class="absolute left-0 mt-2 w-64 glass rounded-xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+            <div class="py-2">
+              <a routerLink="/services/ai-voice-agents" class="block px-4 py-3 text-sm hover:bg-brand-primary hover:text-white transition-colors">AI Voice Agents</a>
+              <a routerLink="/services/ai-chatbots" class="block px-4 py-3 text-sm hover:bg-brand-primary hover:text-white transition-colors">AI Chatbots</a>
+              <a routerLink="/services/web-app-development" class="block px-4 py-3 text-sm hover:bg-brand-primary hover:text-white transition-colors">Web & App Development</a>
+              <a routerLink="/services/social-media-marketing" class="block px-4 py-3 text-sm hover:bg-brand-primary hover:text-white transition-colors">Social Media Marketing</a>
+              <a routerLink="/services/seo-services" class="block px-4 py-3 text-sm hover:bg-brand-primary hover:text-white transition-colors">SEO Services</a>
+            </div>
+          </div>
+        </div>
+
+        <a routerLink="/work" class="text-sm font-medium hover:text-brand-primary transition-colors">Work</a>
+        <a routerLink="/about" class="text-sm font-medium hover:text-brand-primary transition-colors">About</a>
+        <a routerLink="/insights" class="text-sm font-medium hover:text-brand-primary transition-colors">Insights</a>
+        
+        <!-- Theme Toggle -->
+        <button (click)="themeService.toggleTheme()" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+          <svg *ngIf="!themeService.isDarkMode()" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <svg *ngIf="themeService.isDarkMode()" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 18v1m9-9h1M4 12H3m15.364-6.364l.707-.707M6.343 17.657l-.707.707M17.657 17.657l.707.707M6.343 6.343l-.707-.707M14.5 12a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+          </svg>
+        </button>
+
+        <a routerLink="/contact" class="px-6 py-2 bg-brand-primary text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-brand-primary/30 transition-all duration-300">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center space-x-4">
+        <button (click)="themeService.toggleTheme()" class="p-2">
+            <svg *ngIf="!themeService.isDarkMode()" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg *ngIf="themeService.isDarkMode()" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 18v1m9-9h1M4 12H3m15.364-6.364l.707-.707M6.343 17.657l-.707.707M17.657 17.657l.707.707M6.343 6.343l-.707-.707M14.5 12a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+            </svg>
+        </button>
+        <button (click)="toggleMenu()" class="p-2 rounded-lg hover:bg-gray-100 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path *ngIf="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            <path *ngIf="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="isMenuOpen" class="md:hidden glass border-t border-white/10 animate-in slide-in-from-top duration-300">
+    <div class="px-4 pt-2 pb-6 space-y-2">
+      <a routerLink="/" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Home</a>
+      <div class="px-3 py-2 text-base font-medium opacity-50 uppercase tracking-wider text-xs">Services</div>
+      <a routerLink="/services/ai-voice-agents" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">AI Voice Agents</a>
+      <a routerLink="/services/ai-chatbots" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">AI Chatbots</a>
+      <a routerLink="/services/web-app-development" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Web & App Development</a>
+      <a routerLink="/work" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Work</a>
+      <a routerLink="/about" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">About</a>
+      <a routerLink="/contact" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium bg-brand-primary text-white mt-4">Contact Us</a>
+    </div>
+  </div>
+</header>
+<div class="h-16 md:h-20"></div> <!-- Spacer for fixed header -->
