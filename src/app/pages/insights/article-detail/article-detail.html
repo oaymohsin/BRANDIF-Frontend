@@ -1,0 +1,120 @@
+<div appAos class="relative overflow-hidden selection:bg-brand-primary/30">
+
+  <!-- Hero / Header Section -->
+  <section class="relative pt-32 pb-16 md:pt-48 md:pb-32 bg-white dark:bg-[#03070d]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div data-aos="fade-up" class="space-y-10">
+        <a routerLink="/insights" class="inline-flex items-center space-x-2 text-brand-primary font-black text-xs uppercase tracking-[0.4em] hover:translate-x-[-4px] transition-transform">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span>Back to Insights</span>
+        </a>
+        
+        <h1 class="text-4xl md:text-7xl font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+          {{article.title}}
+        </h1>
+
+        <div class="flex flex-wrap items-center gap-8 pt-8 border-t border-slate-100 dark:border-white/10">
+          <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 rounded-full bg-brand-primary/20 flex items-center justify-center font-bold text-xl text-brand-primary uppercase">MG</div>
+            <div>
+              <p class="text-sm font-black text-slate-900 dark:text-white">{{article.author}}</p>
+              <p class="text-xs text-slate-500">{{article.role}}</p>
+            </div>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Published</p>
+            <p class="text-sm font-bold text-slate-700 dark:text-slate-300">{{article.date}}</p>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Read Time</p>
+            <p class="text-sm font-bold text-slate-700 dark:text-slate-300">{{article.readTime}} minute read</p>
+          </div>
+          <div class="ml-auto">
+             <span class="px-5 py-2 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-xs font-black uppercase tracking-widest">{{article.category}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Image -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div data-aos="zoom-out" class="aspect-[21/9] rounded-[3rem] overflow-hidden shadow-2xl relative">
+        <img [src]="article.image" [alt]="article.title" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-brand-primary/5 mix-blend-overlay"></div>
+     </div>
+  </section>
+
+  <!-- Article Body -->
+  <section class="py-24 bg-white dark:bg-[#03070d]">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div data-aos="fade-up" class="prose prose-lg prose-slate dark:prose-invert max-w-none" [innerHTML]="article.content">
+      </div>
+      
+      <div data-aos="fade-up" class="mt-20">
+        <!-- Contextual CTA -->
+        <div class="p-12 md:p-16 rounded-[3.5rem] bg-brand-primary text-white space-y-8 relative overflow-hidden group shadow-2xl">
+          <div class="absolute inset-0 bg-indigo-900/40 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="relative z-10 space-y-6">
+            <h4 class="text-3xl md:text-4xl font-black leading-tight">Need Help Implementing <br>This Strategy?</h4>
+            <p class="text-white/80 text-lg max-w-xl font-medium">If you'd like expert assistance implementing these strategies for your business, we'd love to help.</p>
+            <div class="pt-4">
+              <a routerLink="/contact/book-consultation" class="inline-flex items-center space-x-3 px-10 py-5 bg-white text-brand-primary rounded-full font-black text-sm uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">
+                <span>Book a Free Consultation</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Author Bio -->
+  <section class="py-24 bg-slate-50 dark:bg-[#03070d]/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+       <div class="flex items-center space-x-8 p-10 rounded-[2.5rem] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+          <div class="w-24 h-24 rounded-full bg-brand-primary/20 flex items-center justify-center font-bold text-4xl text-brand-primary shrink-0">MG</div>
+          <div class="space-y-2 text-left">
+            <p class="text-xs font-black text-brand-primary uppercase tracking-[0.3em]">Written By</p>
+            <p class="text-2xl font-black text-slate-900 dark:text-white">{{article.author}}</p>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm font-medium">{{article.bio}}</p>
+          </div>
+       </div>
+    </div>
+  </section>
+
+  <!-- Related Articles -->
+  <section class="py-24 md:py-32 bg-white dark:bg-[#03070d]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-16">
+        <h3 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white">Related Insights</h3>
+        <a routerLink="/insights" class="text-brand-primary font-black text-xs uppercase tracking-[0.3em] hover:translate-x-1 transition-transform inline-flex items-center space-x-2">
+          <span>View All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <a 
+          *ngFor="let rel of relatedArticles" 
+          [routerLink]="['/insights', rel.id]"
+          class="group block space-y-6">
+          <div class="aspect-video rounded-[2.5rem] overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500">
+            <img [src]="rel.image" [alt]="rel.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="space-y-3">
+             <span class="text-[10px] font-black text-brand-primary uppercase tracking-widest">{{rel.category}}</span>
+             <h4 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-brand-primary transition-colors leading-tight">
+               {{rel.title}}
+             </h4>
+             <div class="flex items-center space-x-2 text-sm font-black text-brand-primary uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+               <span>Read Article</span>
+               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+             </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
