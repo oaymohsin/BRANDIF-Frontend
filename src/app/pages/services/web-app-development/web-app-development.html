@@ -10,7 +10,7 @@
     <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-brand-secondary/10 rounded-full blur-[120px] animate-pulse delay-700"></div>
 
     <!-- Image Background Wrapper -->
-    <div class="absolute top-0 right-0 w-full lg:w-2/3 h-full z-0">
+    <div class="absolute top-0 right-0 w-full lg:w-2/3 h-full z-0 hidden md:block">
       <div class="relative h-full w-full">
         <img src="images/web-app-dev-hero.png" alt="Custom Software Development" class="w-full h-full object-cover">
         <!-- Sophisticated Masking / Gradients -->
@@ -22,31 +22,32 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 pb-16 md:pb-32">
-      <div class="max-w-2xl space-y-8">
-        <div data-aos="fade-right" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10 w-full pt-28 pb-12 md:pb-32">
+      <div class="max-w-2xl space-y-6 md:space-y-8">
+        <div data-aos="fade-right" class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-primary"></span>
           </span>
-          <span>Enterprise-Grade Development</span>
+          <span>Enterprise Development</span>
         </div>
         
-        <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-900 dark:text-white">
-          Websites and Apps That <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Drive Business Growth</span>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-6xl font-extrabold tracking-tight leading-[1.2] md:leading-[1.1] text-slate-900 dark:text-white">
+          Websites and Apps That <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Drive Growth</span>
         </h1>
         
-        <p data-aos="fade-up" data-aos-delay="200" class="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-          Custom-built digital platforms designed for performance, scalability, and user experience. From concept to launch, we deliver products that work.
+        <p data-aos="fade-up" data-aos-delay="200" class="text-base md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+          Custom-built digital platforms designed for performance and scalability. We deliver products that work.
         </p>
 
-        <p data-aos="fade-up" data-aos-delay="250" class="text-base text-slate-500 dark:text-slate-500 italic">
-          Your website or app is often the first impression of your business. We build digital products that not only look exceptional but are engineered to convert visitors, support operations, and scale with your ambitions.
-        </p>
-        
-        <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 pt-4">
-          <a routerLink="/contact" class="px-8 py-4 bg-brand-primary text-white rounded-full font-bold text-center hover:shadow-2xl hover:shadow-brand-primary/40 transition-all duration-300 transform hover:-translate-y-1">
-            Start Your Project
+        <!-- Mobile-only Boxed Image -->
+        <div data-aos="fade-up" data-aos-delay="250" class="block md:hidden mt-8 mb-4 rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-white/10 max-w-sm mx-auto">
+          <img src="images/web-app-dev-hero.png" alt="Custom Software Development" class="w-full h-auto object-cover">
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 pt-2">
+          <a href="https://calendly.com/mohsinxaheer/30min" target="_blank" rel="noopener" class="px-8 py-4 bg-brand-primary text-white rounded-full font-bold text-center text-sm shadow-xl shadow-brand-primary/20 transition-all hover:scale-105">
+            Book Your Strategy Call
           </a>
         </div>
       </div>
@@ -126,46 +127,43 @@
 
   <!-- Services Grid -->
   <section class="py-24 md:py-40 relative overflow-hidden bg-slate-50 dark:bg-[#03070d] transition-colors duration-500">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center max-w-3xl mx-auto mb-24 space-y-4">
-        <h2 data-aos="fade-down" class="text-xs font-bold text-brand-primary uppercase tracking-[0.3em]">Full-Stack Expertise</h2>
-        <h3 data-aos="fade-up" class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white leading-tight">What We Build</h3>
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-16 md:mb-24 space-y-4">
+        <h2 data-aos="fade-down" class="text-[10px] md:text-xs font-bold text-brand-primary uppercase tracking-[0.3em]">Expertise</h2>
+        <h3 data-aos="fade-up" class="text-2xl md:text-6xl font-extrabold text-slate-900 dark:text-white leading-tight">What We Build</h3>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         <!-- Corporate Websites -->
-        <div data-aos="fade-up" class="group relative p-10 rounded-[2.5rem] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 hover:border-brand-primary/50 transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl">
-          <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div data-aos="fade-up" class="group relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 transition-all duration-500">
           <div class="relative z-10">
-            <div class="w-16 h-16 bg-blue-500/10 text-blue-500 rounded-2xl flex items-center justify-center mb-8 border border-blue-500/20 group-hover:scale-110 transition-transform">
-              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-500/10 text-blue-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-8 border border-blue-500/20">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
             </div>
-            <h4 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Corporate Websites</h4>
-            <p class="text-slate-500 dark:text-slate-400 leading-relaxed text-sm">Professional, trust-building websites for service businesses and B2B companies that need to establish authority.</p>
+            <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-slate-900 dark:text-white">Corporate Sites</h4>
+            <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Professional websites for service businesses looking to establish authority.</p>
           </div>
         </div>
 
         <!-- eCommerce Platforms -->
-        <div data-aos="fade-up" data-aos-delay="100" class="group relative p-10 rounded-[2.5rem] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 hover:border-brand-secondary/50 transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl">
-          <div class="absolute inset-0 bg-gradient-to-br from-brand-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div data-aos="fade-up" data-aos-delay="100" class="group relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 transition-all duration-500">
           <div class="relative z-10">
-            <div class="w-16 h-16 bg-purple-500/10 text-purple-500 rounded-2xl flex items-center justify-center mb-8 border border-purple-500/20 group-hover:scale-110 transition-transform">
-              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-purple-500/10 text-purple-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-8 border border-purple-500/20">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
             </div>
-            <h4 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white">eCommerce Platforms</h4>
-            <p class="text-slate-500 dark:text-slate-400 leading-relaxed text-sm">Online stores built on Shopify, WooCommerce, or custom headless frameworks with optimized checkout flows.</p>
+            <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-slate-900 dark:text-white">eCommerce</h4>
+            <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Online stores built on Shopify or bespoke frameworks for maximum ROI.</p>
           </div>
         </div>
 
         <!-- Web Applications -->
-        <div data-aos="fade-up" data-aos-delay="200" class="group relative p-10 rounded-[2.5rem] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 hover:border-brand-accent/50 transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl">
-          <div class="absolute inset-0 bg-gradient-to-br from-brand-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="group relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 transition-all duration-500">
           <div class="relative z-10">
-            <div class="w-16 h-16 bg-emerald-500/10 text-emerald-500 rounded-2xl flex items-center justify-center mb-8 border border-emerald-500/20 group-hover:scale-110 transition-transform">
-              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-emerald-500/10 text-emerald-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-8 border border-emerald-500/20">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
             </div>
-            <h4 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Web Applications</h4>
-            <p class="text-slate-500 dark:text-slate-400 leading-relaxed text-sm">Custom SaaS products, portals, and business tools that automate operations and improve organizational efficiency.</p>
+            <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-slate-900 dark:text-white">Custom Apps</h4>
+            <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">SaaS products, portals, and business tools built to automate complex operations.</p>
           </div>
         </div>
 
@@ -325,60 +323,56 @@
         <h3 data-aos="fade-up" class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white leading-tight">Development Investment</h3>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <!-- Brochure -->
-        <div data-aos="fade-up" class="p-10 rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-brand-primary transition-all">
-          <div class="flex justify-between items-center mb-8">
-            <h4 class="text-2xl font-bold">Brochure Website</h4>
-            <div class="text-xl font-bold text-brand-primary">£5k - £15k</div>
+        <div data-aos="fade-up" class="p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all">
+          <div class="flex justify-between items-center mb-6 md:mb-8">
+            <h4 class="text-xl md:text-2xl font-bold">Brochure</h4>
+            <div class="text-lg md:text-xl font-bold text-brand-primary">£5k+</div>
           </div>
-          <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">Professional 5-10 page websites for service businesses with CMS and SEO.</p>
-          <ul class="space-y-3 text-xs opacity-70">
+          <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 mb-6">Professional websites for service businesses with CMS and SEO.</p>
+          <ul class="space-y-3 text-[11px] md:text-xs opacity-70">
             <li class="flex items-center space-x-2"><span>✓</span><span>Custom Design</span></li>
             <li class="flex items-center space-x-2"><span>✓</span><span>CMS Integration</span></li>
-            <li class="flex items-center space-x-2"><span>✓</span><span>Basic SEO Setup</span></li>
           </ul>
         </div>
 
         <!-- Corporate -->
-        <div data-aos="fade-up" data-aos-delay="100" class="p-10 rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-brand-secondary transition-all">
-          <div class="flex justify-between items-center mb-8">
-            <h4 class="text-2xl font-bold">Advanced Corporate</h4>
-            <div class="text-xl font-bold text-brand-secondary">£15k - £35k</div>
+        <div data-aos="fade-up" data-aos-delay="100" class="p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all">
+          <div class="flex justify-between items-center mb-6 md:mb-8">
+            <h4 class="text-xl md:text-2xl font-bold">Advanced</h4>
+            <div class="text-lg md:text-xl font-bold text-brand-secondary">£15k+</div>
           </div>
-          <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">Complex sites with custom features, integrations, or booking systems.</p>
-          <ul class="space-y-3 text-xs opacity-70">
+          <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 mb-6">Complex sites with custom features and third-party integrations.</p>
+          <ul class="space-y-3 text-[11px] md:text-xs opacity-70">
             <li class="flex items-center space-x-2"><span>✓</span><span>API Integrations</span></li>
-            <li class="flex items-center space-x-2"><span>✓</span><span>Custom Member Areas</span></li>
-            <li class="flex items-center space-x-2"><span>✓</span><span>Advanced Animations</span></li>
+            <li class="flex items-center space-x-2"><span>✓</span><span>Member Areas</span></li>
           </ul>
         </div>
 
         <!-- eCommerce -->
-        <div data-aos="fade-up" data-aos-delay="200" class="p-10 rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-brand-accent transition-all">
-          <div class="flex justify-between items-center mb-8">
-            <h4 class="text-2xl font-bold">eCommerce Store</h4>
-            <div class="text-xl font-bold text-brand-accent">£10k - £50k+</div>
+        <div data-aos="fade-up" data-aos-delay="200" class="p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all">
+          <div class="flex justify-between items-center mb-6 md:mb-8">
+            <h4 class="text-xl md:text-2xl font-bold">eCommerce</h4>
+            <div class="text-lg md:text-xl font-bold text-brand-accent">£10k+</div>
           </div>
-          <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">Online shops ranging from Shopify to complex multi-warehouse operations.</p>
-          <ul class="space-y-3 text-xs opacity-70">
-            <li class="flex items-center space-x-2"><span>✓</span><span>Payment Processing</span></li>
+          <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 mb-6">Online shops built on Shopify with optimized checkout flows.</p>
+          <ul class="space-y-3 text-[11px] md:text-xs opacity-70">
+            <li class="flex items-center space-x-2"><span>✓</span><span>Payment Systems</span></li>
             <li class="flex items-center space-x-2"><span>✓</span><span>Inventory Systems</span></li>
-            <li class="flex items-center space-x-2"><span>✓</span><span>Conversion Optimisation</span></li>
           </ul>
         </div>
 
         <!-- Application -->
-        <div data-aos="fade-up" data-aos-delay="300" class="p-10 rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-brand-primary transition-all">
-          <div class="flex justify-between items-center mb-8">
-            <h4 class="text-2xl font-bold">Web/Mobile App</h4>
-            <div class="text-xl font-bold text-brand-primary">£25k - £150k+</div>
+        <div data-aos="fade-up" data-aos-delay="300" class="p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all">
+          <div class="flex justify-between items-center mb-6 md:mb-8">
+            <h4 class="text-xl md:text-2xl font-bold">Web/Mobile App</h4>
+            <div class="text-lg md:text-xl font-bold text-brand-primary">£25k+</div>
           </div>
-          <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">Custom SaaS products, portals, and bespoke mobile applications.</p>
-          <ul class="space-y-3 text-xs opacity-70">
+          <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 mb-6">Custom SaaS products, portals, and bespoke applications.</p>
+          <ul class="space-y-3 text-[11px] md:text-xs opacity-70">
             <li class="flex items-center space-x-2"><span>✓</span><span>Complex Backend</span></li>
-            <li class="flex items-center space-x-2"><span>✓</span><span>Scaleable Architecture</span></li>
-            <li class="flex items-center space-x-2"><span>✓</span><span>iOS & Android Support</span></li>
+            <li class="flex items-center space-x-2"><span>✓</span><span>Scalable Systems</span></li>
           </ul>
         </div>
       </div>
@@ -467,28 +461,28 @@
 
   <!-- Why Choose Brandif Section -->
   <section class="py-24 md:py-40 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
-        <h2 data-aos="fade-down" class="text-xs font-bold text-brand-primary uppercase tracking-[0.3em]">The Brandif Edge</h2>
-        <h3 data-aos="fade-up" class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white">What Sets Us Apart</h3>
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20 space-y-4">
+        <h2 data-aos="fade-down" class="text-[10px] md:text-xs font-bold text-brand-primary uppercase tracking-[0.3em]">The Brandif Edge</h2>
+        <h3 data-aos="fade-up" class="text-2xl md:text-5xl font-extrabold text-slate-900 dark:text-white">What Sets Us Apart</h3>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        <div data-aos="fade-up" class="space-y-4">
-          <h4 class="text-xl font-bold text-slate-900 dark:text-white">Business-First Thinking</h4>
-          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">We're not just developers—we're business partners who understand commercial objectives and ROI.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        <div data-aos="fade-up" class="space-y-3 md:space-y-4">
+          <h4 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white">Business-First</h4>
+          <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">We understand commercial objectives and ROI.</p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="100" class="space-y-4">
-          <h4 class="text-xl font-bold text-slate-900 dark:text-white">UK-Based Team</h4>
-          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Your project is managed and built in London. No offshoring, no miscommunication or time zone challenges.</p>
+        <div data-aos="fade-up" data-aos-delay="100" class="space-y-3 md:space-y-4">
+          <h4 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white">UK-Based</h4>
+          <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Built in London. No offshoring or miscommunication.</p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200" class="space-y-4">
-          <h4 class="text-xl font-bold text-slate-900 dark:text-white">Long-Term Partnership</h4>
-          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">We're here after launch. Most clients work with us for years, and we grow alongside their digital products.</p>
+        <div data-aos="fade-up" data-aos-delay="200" class="space-y-3 md:space-y-4">
+          <h4 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white">Partnership</h4>
+          <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">We grow alongside your digital products.</p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="300" class="space-y-4">
-          <h4 class="text-xl font-bold text-slate-900 dark:text-white">Transparent Comms</h4>
-          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Regular updates, shared project boards, and direct access to your development team throughout.</p>
+        <div data-aos="fade-up" data-aos-delay="300" class="space-y-3 md:space-y-4">
+          <h4 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white">Comms</h4>
+          <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Regular updates and direct team access.</p>
         </div>
       </div>
     </div>
@@ -497,13 +491,13 @@
   <!-- Final CTA Section -->
   <section class="py-24 md:py-40 relative overflow-hidden text-center">
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-primary/5 to-transparent"></div>
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
-      <h2 data-aos="fade-up" class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white">Let's Discuss Your Project</h2>
-      <p data-aos="fade-up" data-aos-delay="100" class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-        Book a free consultation to discuss your requirements. We'll provide honest advice on feasibility, timeline, and investment.
+    <div class="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10 space-y-8 md:space-y-10">
+      <h2 data-aos="fade-up" class="text-3xl md:text-6xl font-extrabold text-slate-900 dark:text-white">Discuss Your Project</h2>
+      <p data-aos="fade-up" data-aos-delay="100" class="text-base md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+        Book a consultation to discuss your requirements. We'll provide honest advice.
       </p>
-      <div data-aos="fade-up" data-aos-delay="200" class="pt-6">
-        <a routerLink="/contact" class="px-10 py-5 bg-brand-primary text-white rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-brand-primary/40 transition-all duration-300 transform hover:-translate-y-1">
+      <div data-aos="fade-up" data-aos-delay="200" class="pt-2">
+        <a routerLink="/contact" class="px-8 py-4 bg-brand-primary text-white rounded-full font-bold text-sm">
           Book Your Consultation
         </a>
       </div>

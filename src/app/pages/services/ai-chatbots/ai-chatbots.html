@@ -10,7 +10,7 @@
     <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-brand-secondary/10 rounded-full blur-[120px] animate-pulse delay-700"></div>
 
     <!-- Image Background Wrapper -->
-    <div class="absolute top-0 right-0 w-full lg:w-2/3 h-full z-0">
+    <div class="absolute top-0 right-0 w-full lg:w-2/3 h-full z-0 hidden md:block">
       <div class="relative h-full w-full">
         <img src="/images/ai-chatbot-hero.png" alt="AI Chatbot Innovation" class="w-full h-full object-cover">
         <!-- Sophisticated Masking / Gradients: Precision tuned for clarity and blending -->
@@ -22,31 +22,32 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 pb-16 md:pb-32">
-      <div class="max-w-2xl space-y-8">
-        <div data-aos="fade-right" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10 w-full pt-28 pb-12 md:pb-32">
+      <div class="max-w-2xl space-y-6 md:space-y-8">
+        <div data-aos="fade-right" class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-primary"></span>
           </span>
-          <span>Next-Generation Conversational AI</span>
+          <span>Conversational AI</span>
         </div>
         
-        <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-900 dark:text-white">
-          AI Chatbots That <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Convert Visitors</span> Into Customers
+        <h1 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-6xl font-extrabold tracking-tight leading-[1.2] md:leading-[1.1] text-slate-900 dark:text-white">
+          AI Chatbots That <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Convert Visitors</span>
         </h1>
         
-        <p data-aos="fade-up" data-aos-delay="200" class="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-          Deploy intelligent conversational AI across your website, WhatsApp, and social channels to answer questions, capture leads, and drive sales—automatically.
+        <p data-aos="fade-up" data-aos-delay="200" class="text-base md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+          Deploy intelligent AI across your website to answer questions, capture leads, and drive sales—automatically.
         </p>
 
-        <p data-aos="fade-up" data-aos-delay="250" class="text-base text-slate-500 dark:text-slate-500 italic">
-          Your website receives visitors every day. How many leave without taking action because they can't find what they need? AI chatbots provide instant answers, guide visitors to solutions, and capture qualified leads whilst you sleep.
-        </p>
+        <!-- Mobile-only Boxed Image -->
+        <div data-aos="fade-up" data-aos-delay="250" class="block md:hidden mt-8 mb-4 rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-white/10 max-w-sm mx-auto">
+          <img src="/images/ai-chatbot-hero.png" alt="AI Chatbot Innovation" class="w-full h-auto object-cover">
+        </div>
         
-        <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 pt-4">
-          <a routerLink="/contact" class="px-8 py-4 bg-brand-primary text-white rounded-full font-bold text-center hover:shadow-2xl hover:shadow-brand-primary/40 transition-all duration-300 transform hover:-translate-y-1">
-            See Chatbots in Action
+        <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 pt-2">
+          <a href="https://calendly.com/mohsinxaheer/30min" target="_blank" rel="noopener" class="px-8 py-4 bg-brand-primary text-white rounded-full font-bold text-center text-sm shadow-xl shadow-brand-primary/20 transition-all hover:scale-105">
+            Book Your Strategy Call
           </a>
         </div>
       </div>
@@ -128,46 +129,43 @@
 
   <!-- Types of Chatbots Section -->
   <section class="py-24 md:py-32 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
-        <h2 data-aos="fade-down" class="text-xs font-bold text-brand-primary uppercase tracking-widest">Tailored Intelligence</h2>
-        <h3 data-aos="fade-up" class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white">Chatbot Solutions We Build</h3>
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20 space-y-4">
+        <h2 data-aos="fade-down" class="text-[10px] md:text-xs font-bold text-brand-primary uppercase tracking-widest">Tailored Intelligence</h2>
+        <h3 data-aos="fade-up" class="text-2xl md:text-5xl font-extrabold text-slate-900 dark:text-white">Solutions We Build</h3>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         <!-- Lead Gen -->
-        <div data-aos="fade-up" class="group relative p-10 rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-brand-primary/50 transition-all duration-500 overflow-hidden hover:-translate-y-2 shadow-2xl shadow-transparent hover:shadow-brand-primary/10">
-          <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div data-aos="fade-up" class="group relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all duration-500 overflow-hidden">
           <div class="relative z-10 text-center">
-            <div class="w-20 h-20 bg-blue-500/10 text-blue-500 rounded-3xl flex items-center justify-center mb-8 mx-auto border border-blue-500/20 group-hover:rotate-6 transition-transform duration-500">
-              <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-blue-500/10 text-blue-500 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-8 mx-auto border border-blue-500/20">
+              <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
             </div>
-            <h4 class="text-3xl font-bold mb-4 text-slate-900 dark:text-white">Lead Generation</h4>
-            <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Perfect for service businesses. Engages visitors, asks qualifying questions, and books demos directly into your calendar.</p>
+            <h4 class="text-xl md:text-3xl font-bold mb-3 md:mb-4 text-slate-900 dark:text-white">Lead Generation</h4>
+            <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Engages visitors, asks qualifying questions, and books demos directly into your calendar.</p>
           </div>
         </div>
 
         <!-- Customer Support -->
-        <div data-aos="fade-up" data-aos-delay="100" class="group relative p-10 rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-brand-secondary/50 transition-all duration-500 overflow-hidden hover:-translate-y-2 shadow-2xl shadow-transparent hover:shadow-brand-secondary/10">
-          <div class="absolute inset-0 bg-gradient-to-br from-brand-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div data-aos="fade-up" data-aos-delay="100" class="group relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all duration-500 overflow-hidden">
           <div class="relative z-10 text-center">
-            <div class="w-20 h-20 bg-purple-500/10 text-purple-500 rounded-3xl flex items-center justify-center mb-8 mx-auto border border-purple-500/20 group-hover:-rotate-6 transition-transform duration-500">
-              <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-purple-500/10 text-purple-500 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-8 mx-auto border border-purple-500/20">
+              <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
             </div>
-            <h4 class="text-3xl font-bold mb-4 text-slate-900 dark:text-white">Customer Support</h4>
-            <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Handles common questions about products, services and logistics—reducing support tickets by up to 60%.</p>
+            <h4 class="text-xl md:text-3xl font-bold mb-3 md:mb-4 text-slate-900 dark:text-white">Support</h4>
+            <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Handles common questions about products and services—reducing support tickets by 60%.</p>
           </div>
         </div>
 
         <!-- Sales -->
-        <div data-aos="fade-up" data-aos-delay="200" class="group relative p-10 rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-brand-accent/50 transition-all duration-500 overflow-hidden hover:-translate-y-2 shadow-2xl shadow-transparent hover:shadow-brand-accent/10">
-          <div class="absolute inset-0 bg-gradient-to-br from-brand-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="group relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all duration-500 overflow-hidden">
           <div class="relative z-10 text-center">
-            <div class="w-20 h-20 bg-emerald-500/10 text-emerald-500 rounded-3xl flex items-center justify-center mb-8 mx-auto border border-emerald-500/20 group-hover:rotate-6 transition-transform duration-500">
-              <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-emerald-500/10 text-emerald-500 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-8 mx-auto border border-emerald-500/20">
+              <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
             </div>
-            <h4 class="text-3xl font-bold mb-4 text-slate-900 dark:text-white">Sales & ROI</h4>
-            <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Guides shoppers through catalogues, suggests relevant items, and adds to cart—drastically increasing AOV.</p>
+            <h4 class="text-xl md:text-3xl font-bold mb-3 md:mb-4 text-slate-900 dark:text-white">Sales & ROI</h4>
+            <p class="text-[13px] md:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Guides shoppers through catalogues and suggests relevant items—increasing average order value.</p>
           </div>
         </div>
       </div>

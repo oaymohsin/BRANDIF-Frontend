@@ -2,8 +2,8 @@
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20">
       <!-- Logo -->
-      <div class="flex-shrink-0 flex items-center">
-        <a routerLink="/" class="text-xl md:text-2xl font-bold tracking-tighter text-brand-primary dark:text-brand-secondary">
+      <div class="flex-shrink-0 flex items-center pl-2 md:pl-0">
+        <a routerLink="/" class="text-lg md:text-2xl font-bold tracking-tighter text-brand-primary dark:text-brand-secondary transition-all">
           BRANDIF<span class="text-brand-accent">.</span>
         </a>
       </div>
@@ -55,18 +55,17 @@
         </a>
       </div>
 
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden flex items-center space-x-4">
-        <button (click)="themeService.toggleTheme()" class="p-2">
-            <svg *ngIf="!themeService.isDarkMode()" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div class="md:hidden flex items-center space-x-2 pr-2">
+        <button (click)="themeService.toggleTheme()" class="p-1.5 opacity-70">
+            <svg *ngIf="!themeService.isDarkMode()" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
             </svg>
-            <svg *ngIf="themeService.isDarkMode()" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg *ngIf="themeService.isDarkMode()" class="h-4 w-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 18v1m9-9h1M4 12H3m15.364-6.364l.707-.707M6.343 17.657l-.707.707M17.657 17.657l.707.707M6.343 6.343l-.707-.707M14.5 12a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
             </svg>
         </button>
-        <button (click)="toggleMenu()" class="p-2 rounded-lg hover:bg-gray-100 focus:outline-none">
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button (click)="toggleMenu()" class="p-1.5 rounded-lg focus:outline-none opacity-70">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path *ngIf="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
             <path *ngIf="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -77,22 +76,22 @@
 
   <!-- Mobile Menu -->
   <div *ngIf="isMenuOpen" class="md:hidden glass border-t border-white/10 animate-in slide-in-from-top duration-300">
-    <div class="px-4 pt-2 pb-6 space-y-2">
-      <a routerLink="/" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Home</a>
-      <div class="px-3 py-2 text-base font-medium opacity-50 uppercase tracking-wider text-xs">Services</div>
-      <a routerLink="/services/ai-voice-agents" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">AI Voice Agents</a>
-      <a routerLink="/services/ai-chatbots" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">AI Chatbots</a>
-      <a routerLink="/services/web-app-development" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Web & App Development</a>
-      <a routerLink="/services/social-media-marketing" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Social Media Marketing</a>
-      <a routerLink="/services/seo-services" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">SEO Services</a>
-      <a routerLink="/services/ppc-advertising" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">PPC Advertising</a>
-      <a routerLink="/services/ecommerce-solutions" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">eCommerce Solutions</a>
-      <a routerLink="/services/design-branding" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Design & Branding</a>
-      <a routerLink="/services/digital-consultancy" (click)="toggleMenu()" class="block px-6 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Digital Consultancy</a>
-      <a routerLink="/work" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Work</a>
-      <a routerLink="/about" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">About</a>
-      <a routerLink="/insights" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-primary hover:text-white">Insights</a>
-      <a routerLink="/contact" (click)="toggleMenu()" class="block px-3 py-2 rounded-md text-base font-medium bg-brand-primary text-white mt-4">Contact Us</a>
+    <div class="px-6 pt-2 pb-8 space-y-1">
+      <a routerLink="/" (click)="toggleMenu()" class="block px-3 py-2.5 rounded-md text-sm font-bold hover:bg-brand-primary hover:text-white">Home</a>
+      <div class="px-3 py-2 text-[10px] font-black opacity-30 uppercase tracking-[0.2em]">Services</div>
+      <a routerLink="/services/ai-voice-agents" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">AI Voice Agents</a>
+      <a routerLink="/services/ai-chatbots" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">AI Chatbots</a>
+      <a routerLink="/services/web-app-development" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">Web & App Development</a>
+      <a routerLink="/services/social-media-marketing" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">Social Media Marketing</a>
+      <a routerLink="/services/seo-services" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">SEO Services</a>
+      <a routerLink="/services/ppc-advertising" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">PPC Advertising</a>
+      <a routerLink="/services/ecommerce-solutions" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">eCommerce Solutions</a>
+      <a routerLink="/services/design-branding" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">Design & Branding</a>
+      <a routerLink="/services/digital-consultancy" (click)="toggleMenu()" class="block px-6 py-1.5 rounded-md text-sm font-medium hover:bg-brand-primary hover:text-white opacity-80">Digital Consultancy</a>
+      <a routerLink="/work" (click)="toggleMenu()" class="block px-3 py-2.5 rounded-md text-sm font-bold hover:bg-brand-primary hover:text-white">Work</a>
+      <a routerLink="/about" (click)="toggleMenu()" class="block px-3 py-2.5 rounded-md text-sm font-bold hover:bg-brand-primary hover:text-white">About</a>
+      <a routerLink="/insights" (click)="toggleMenu()" class="block px-3 py-2.5 rounded-md text-sm font-bold hover:bg-brand-primary hover:text-white">Insights</a>
+      <a routerLink="/contact" (click)="toggleMenu()" class="block px-4 py-3 text-center rounded-xl text-sm font-black bg-brand-primary text-white mt-4 mx-3">Contact Us</a>
     </div>
   </div>
 </header>

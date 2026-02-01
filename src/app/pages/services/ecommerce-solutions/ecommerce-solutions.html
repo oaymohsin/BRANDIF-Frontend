@@ -10,7 +10,7 @@
     <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] animate-pulse delay-700"></div>
 
     <!-- Image Background Wrapper -->
-    <div class="absolute top-0 right-0 w-full lg:w-2/3 h-full z-0">
+    <div class="absolute top-0 right-0 w-full lg:w-2/3 h-full z-0 hidden md:block">
       <div class="relative h-full w-full">
         <img src="images/ecommerce-hero.png" alt="eCommerce Growth & Sales" class="w-full h-full object-cover">
         <!-- Sophisticated Masking / Gradients -->
@@ -22,31 +22,32 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 pb-16 md:pb-32">
-      <div class="max-w-3xl space-y-8">
-        <div data-aos="fade-right" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-600 dark:text-orange-400 text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10 w-full pt-28 pb-12 md:pb-32">
+      <div class="max-w-3xl space-y-6 md:space-y-8">
+        <div data-aos="fade-right" class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-600 dark:text-orange-400 text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-500 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
           </span>
-          <span>Scalable Online Stores</span>
+          <span>Scalable Stores</span>
         </div>
         
-        <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+        <h1 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-6xl font-extrabold tracking-tight leading-[1.2] md:leading-[1.1] text-slate-900 dark:text-white">
           Convert Browsers Into <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-brand-primary">Loyal Buyers</span>
         </h1>
         
-        <p data-aos="fade-up" data-aos-delay="200" class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-            Complete online stores designed, built, and optimised for maximum sales. From Shopify to custom platforms, we create shopping experiences that customers trust.
+        <p data-aos="fade-up" data-aos-delay="200" class="text-base md:text-xl text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed font-medium">
+            Complete online stores designed for maximum sales. We create shopping experiences that customers trust.
         </p>
 
-        <p data-aos="fade-up" data-aos-delay="250" class="text-base text-slate-500 dark:text-slate-500 max-w-lg italic">
-            Selling online requires more than a product catalogue. We build eCommerce platforms with optimised user experience, secure payment processing, and conversion-focused design.
-        </p>
-        
-        <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 pt-4">
-          <a routerLink="/contact" class="px-8 py-4 bg-orange-500 text-white rounded-full font-bold text-center hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-300 transform hover:-translate-y-1">
-            Start Your eCommerce Project
+        <!-- Mobile-only Boxed Image -->
+        <div data-aos="fade-up" data-aos-delay="250" class="block md:hidden mt-8 mb-4 rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-white/10 max-w-sm mx-auto">
+          <img src="images/ecommerce-hero.png" alt="eCommerce Growth & Sales" class="w-full h-auto object-cover">
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 pt-2">
+          <a href="https://calendly.com/mohsinxaheer/30min" target="_blank" rel="noopener" class="px-8 py-4 bg-orange-500 text-white rounded-full font-bold text-center text-sm shadow-xl shadow-orange-500/20 transition-all hover:scale-105">
+            Book Your Strategy Call
           </a>
         </div>
       </div>
@@ -55,32 +56,32 @@
 
   <!-- Services Section -->
   <section class="py-24 md:py-32 relative overflow-hidden bg-white dark:bg-[#03070d]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
-            <h2 data-aos="fade-down" class="text-xs font-bold text-orange-500 uppercase tracking-[0.3em]">Everything You Need</h2>
-            <h3 data-aos="fade-up" class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white">Full-Stack eCommerce</h3>
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20 space-y-4">
+            <h2 data-aos="fade-down" class="text-[10px] md:text-xs font-bold text-orange-500 uppercase tracking-[0.3em]">Full-Stack</h2>
+            <h3 data-aos="fade-up" class="text-2xl md:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">Everything You Need</h3>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Store Design -->
-            <div data-aos="fade-up" class="group p-8 rounded-3xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 hover:border-orange-500 transition-all duration-500">
-                <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Design & Development</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">Custom Shopify, WooCommerce, or bespoke builds tailored to your requirements.</p>
+            <div data-aos="fade-up" class="group p-6 md:p-8 rounded-2xl md:rounded-3xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 transition-all duration-500">
+                <h4 class="text-base md:text-lg font-bold text-slate-900 dark:text-white mb-2 md:mb-3">Design & Build</h4>
+                <p class="text-[11px] md:text-xs text-slate-500 leading-relaxed">Custom Shopify, WooCommerce, or bespoke builds tailored to you.</p>
             </div>
             <!-- Migration -->
-            <div data-aos="fade-up" data-aos-delay="100" class="group p-8 rounded-3xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 hover:border-orange-500 transition-all duration-500">
-                <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Platform Migration</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">Safe data, SEO, and order transfer between platforms (e.g. WC to Shopify).</p>
+            <div data-aos="fade-up" data-aos-delay="100" class="group p-6 md:p-8 rounded-2xl md:rounded-3xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 transition-all duration-500">
+                <h4 class="text-base md:text-lg font-bold text-slate-900 dark:text-white mb-2 md:mb-3">Migration</h4>
+                <p class="text-[11px] md:text-xs text-slate-500 leading-relaxed">Safe data, SEO, and order transfer between platforms.</p>
             </div>
             <!-- Payments -->
-            <div data-aos="fade-up" data-aos-delay="200" class="group p-8 rounded-3xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 hover:border-orange-500 transition-all duration-500">
-                <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Payment Integration</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">Secure processing through Stripe, PayPal, and multi-currency support.</p>
+            <div data-aos="fade-up" data-aos-delay="200" class="group p-6 md:p-8 rounded-2xl md:rounded-3xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 transition-all duration-500">
+                <h4 class="text-base md:text-lg font-bold text-slate-900 dark:text-white mb-2 md:mb-3">Payments</h4>
+                <p class="text-[11px] md:text-xs text-slate-500 leading-relaxed">Secure processing through Stripe and multi-currency support.</p>
             </div>
             <!-- Inventory -->
-            <div data-aos="fade-up" data-aos-delay="300" class="group p-8 rounded-3xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 hover:border-orange-500 transition-all duration-500">
-                <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Inventory Mgmt</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">Multi-warehouse sync and automated stock updates across channels.</p>
+            <div data-aos="fade-up" data-aos-delay="300" class="group p-6 md:p-8 rounded-2xl md:rounded-3xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 transition-all duration-500">
+                <h4 class="text-base md:text-lg font-bold text-slate-900 dark:text-white mb-2 md:mb-3">Inventory</h4>
+                <p class="text-[11px] md:text-xs text-slate-500 leading-relaxed">Multi-warehouse sync and automated stock updates.</p>
             </div>
         </div>
     </div>
@@ -94,30 +95,28 @@
             <h3 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">We Build on the Best</h3>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             <!-- Shopify -->
-            <div data-aos="fade-right" class="p-10 rounded-[2.5rem] bg-white dark:bg-[#03070d] border border-slate-200 dark:border-white/10 shadow-xl group hover:border-green-500 transition-all">
-                <div class="flex items-center justify-between mb-8">
-                    <h4 class="text-2xl font-bold text-slate-900 dark:text-white">Shopify</h4>
-                    <span class="text-xs font-bold text-green-500 uppercase tracking-widest">Starting From £8k</span>
+            <div data-aos="fade-right" class="p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-[#03070d] border border-slate-200 dark:border-white/10 transition-all">
+                <div class="flex items-center justify-between mb-6 md:mb-8">
+                    <h4 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">Shopify</h4>
+                    <span class="text-[10px] md:text-xs font-bold text-green-500 uppercase tracking-widest">From £8k</span>
                 </div>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">The world's most popular platform. Ideal for retail brands, fashion, and beauty.</p>
-                <ul class="space-y-3 text-xs text-slate-500">
-                    <li class="flex items-center space-x-2"><span>✓</span><span>Industry-leading uptime & support</span></li>
-                    <li class="flex items-center space-x-2"><span>✓</span><span>Massive app ecosystem for scaling</span></li>
+                <p class="text-[13px] md:text-sm text-slate-600 dark:text-slate-400 mb-6">Ideal for retail brands looking for industry-leading uptime and massive scale.</p>
+                <ul class="space-y-3 text-[11px] md:text-xs text-slate-500">
+                    <li class="flex items-center space-x-2"><span>✓</span><span>Industry-leading ecosystem</span></li>
                 </ul>
             </div>
 
             <!-- WooCommerce -->
-            <div data-aos="fade-left" class="p-10 rounded-[2.5rem] bg-white dark:bg-[#03070d] border border-slate-200 dark:border-white/10 shadow-xl group hover:border-purple-500 transition-all">
-                <div class="flex items-center justify-between mb-8">
-                    <h4 class="text-2xl font-bold text-slate-900 dark:text-white">WooCommerce</h4>
-                    <span class="text-xs font-bold text-purple-500 uppercase tracking-widest">Starting From £6k</span>
+            <div data-aos="fade-left" class="p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-[#03070d] border border-slate-200 dark:border-white/10 transition-all">
+                <div class="flex items-center justify-between mb-6 md:mb-8">
+                    <h4 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">WooCommerce</h4>
+                    <span class="text-[10px] md:text-xs font-bold text-purple-500 uppercase tracking-widest">From £6k</span>
                 </div>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Open-source flexibility. Best for content-heavy stores and complex customisations.</p>
-                <ul class="space-y-3 text-xs text-slate-500">
-                    <li class="flex items-center space-x-2"><span>✓</span><span>Complete data ownership</span></li>
-                    <li class="flex items-center space-x-2"><span>✓</span><span>Unlimited customisation potential</span></li>
+                <p class="text-[13px] md:text-sm text-slate-600 dark:text-slate-400 mb-6">Best for content-heavy stores requiring complete data ownership and flexibility.</p>
+                <ul class="space-y-3 text-[11px] md:text-xs text-slate-500">
+                    <li class="flex items-center space-x-2"><span>✓</span><span>Unlimited customisation</span></li>
                 </ul>
             </div>
         </div>
@@ -175,14 +174,14 @@
   <!-- Final CTA Section -->
   <section class="py-24 md:py-40 relative overflow-hidden text-center bg-slate-50 dark:bg-[#03070d]">
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-orange-500/5 to-transparent"></div>
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
-      <h2 data-aos="fade-up" class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight">Ready to Own the Market?</h2>
-      <p data-aos="fade-up" data-aos-delay="100" class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-        Book a free eCommerce consultation. We'll discuss your products and goals—then recommend the best approach for your success.
+    <div class="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10 space-y-8 md:space-y-10">
+      <h2 data-aos="fade-up" class="text-3xl md:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight">Ready to Grow?</h2>
+      <p data-aos="fade-up" data-aos-delay="100" class="text-base md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+        Book a consultation to discuss your products and goals—we'll recommend the best approach for success.
       </p>
-      <div data-aos="fade-up" data-aos-delay="200" class="pt-6">
-        <a routerLink="/contact" class="px-10 py-5 bg-orange-500 text-white rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-300 transform hover:-translate-y-1">
-          Book Your eCommerce Consultation
+      <div data-aos="fade-up" data-aos-delay="200" class="pt-2">
+        <a routerLink="/contact" class="px-8 py-4 bg-orange-500 text-white rounded-full font-bold text-sm">
+          Book Your Consultation
         </a>
       </div>
     </div>
