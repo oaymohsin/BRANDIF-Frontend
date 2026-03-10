@@ -1,4 +1,4 @@
-<header class="fixed top-0 left-0 w-full z-50 glass dark:glass-dark transition-all duration-300">
+<header [ngClass]="isScrolled ? 'bg-transparent border-transparent backdrop-blur-md' : 'glass dark:glass-dark'" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20">
       <!-- Logo -->
@@ -13,16 +13,16 @@
         <a routerLink="/" class="text-sm font-medium hover:text-brand-primary transition-colors">Home</a>
         
         <!-- Services Dropdown -->
-        <div class="relative group">
-          <button (click)="toggleServices()" class="flex items-center text-sm font-medium hover:text-brand-primary transition-colors focus:outline-none">
+        <div class="relative group" (mouseenter)="isServicesOpen = true" (mouseleave)="isServicesOpen = false">
+          <button routerLink="/services" class="flex items-center text-sm font-medium hover:text-brand-primary transition-colors focus:outline-none">
             Services
             <svg class="ml-1 h-4 w-4 transition-transform duration-200" [class.rotate-180]="isServicesOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           
-          <div *ngIf="isServicesOpen" class="absolute left-0 mt-2 w-64 glass rounded-xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
-            <div class="py-2">
+          <div *ngIf="isServicesOpen" class="absolute left-0 pt-4 w-64 animate-in fade-in slide-in-from-top-2 duration-200">
+            <div class="py-2 glass rounded-xl shadow-2xl overflow-hidden">
               <a routerLink="/services/ai-voice-agents" class="block px-4 py-3 text-sm hover:bg-brand-primary hover:text-white transition-colors">AI Voice Agents</a>
               <a routerLink="/services/ai-chatbots" class="block px-4 py-3 text-sm hover:bg-brand-primary hover:text-white transition-colors">AI Chatbots</a>
               <a routerLink="/services/web-app-development" class="block px-4 py-3 text-sm hover:bg-brand-primary hover:text-white transition-colors">Web & App Development</a>
@@ -95,4 +95,3 @@
     </div>
   </div>
 </header>
-<div class="h-16 md:h-20"></div> <!-- Spacer for fixed header -->

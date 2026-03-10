@@ -42,7 +42,7 @@
 
 /* Glassmorphism utility */
 .glass {
-  @apply bg-white dark:bg-[#0c1222]/50 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-2xl;
+  @apply bg-white/80 dark:bg-[#0c1222]/50 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-2xl;
 }
 
 .card-premium {

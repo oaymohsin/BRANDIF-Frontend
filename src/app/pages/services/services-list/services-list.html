@@ -1,0 +1,82 @@
+<div appAos class="relative overflow-hidden selection:bg-brand-primary/30">
+
+  <!-- Hero Section for Services -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 flex items-center overflow-hidden bg-white dark:bg-[#03070d]">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-primary/5 via-transparent to-white dark:from-brand-primary/10 dark:via-transparent dark:to-[#03070d]"></div>
+    <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand-primary/5 rounded-full blur-[120px] animate-pulse"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10 w-full text-center">
+      <div class="max-w-4xl mx-auto space-y-6 md:space-y-8">
+        <div data-aos="fade-down" class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-[9px] font-black uppercase tracking-[0.3em] backdrop-blur-md">
+          <span>Our Capabilities</span>
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl md:text-7xl font-black tracking-tighter text-slate-900 dark:text-white leading-[1.1] md:leading-[0.9]">
+          Comprehensive <br class="hidden md:block"><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-indigo-500 to-indigo-400">Digital Solutions</span>
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="text-base md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto font-medium">
+          From advanced artificial intelligence to high-performance web applications, we build digital assets that scale your business.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Services Grid View -->
+  <section class="py-16 md:py-32 bg-slate-50 dark:bg-[#03070d]/50">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        
+        <div *ngFor="let service of services; let i = index" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 50">
+          <div class="group h-full p-8 md:p-10 rounded-[2.5rem] md:rounded-[3rem] bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-brand-primary/30 transition-all duration-500 shadow-xl shadow-slate-200/50 dark:shadow-none hover:-translate-y-2 flex flex-col">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500" [ngClass]="service.colorClass">
+              <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" [attr.d]="service.iconPath" />
+              </svg>
+            </div>
+            
+            <h3 class="text-xl md:text-2xl font-black text-slate-900 dark:text-white mb-4 group-hover:text-brand-primary transition-colors">{{service.title}}</h3>
+            
+            <p class="text-sm md:text-base text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-8 flex-grow">
+              {{service.description}}
+            </p>
+            
+            <a [routerLink]="service.link" class="mt-auto inline-flex items-center text-[11px] md:text-xs font-black uppercase tracking-widest text-slate-900 dark:text-white group-hover:text-brand-primary transition-colors">
+              Explore Service 
+              <span class="ml-2 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center group-hover:bg-brand-primary/10 group-hover:translate-x-2 transition-all">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-24 md:py-32 px-6 relative overflow-hidden bg-white dark:bg-[#03070d]">
+    <div class="max-w-6xl mx-auto">
+      <div data-aos="zoom-in" class="relative rounded-[2.5rem] md:rounded-[40px] overflow-hidden glass border border-slate-200 dark:border-white/10 p-10 md:p-24 text-center space-y-8 md:space-y-10 shadow-3xl">
+        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 md:w-96 h-64 md:h-96 bg-brand-primary/20 rounded-full blur-[80px] md:blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-64 md:w-96 h-64 md:h-96 bg-brand-secondary/20 rounded-full blur-[80px] md:blur-[100px] pointer-events-none"></div>
+        
+        <div class="relative z-10 max-w-3xl mx-auto space-y-6 md:space-y-8">
+          <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+            Ready to <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-blue-500 to-brand-secondary">Transform?</span>
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="200" class="text-sm md:text-xl text-slate-600 dark:text-slate-400 font-medium">
+            Let's discuss how our capabilities align with your long-term business goals.
+          </p>
+          <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 pt-4">
+            <a href="https://calendly.com/mohsinxaheer/30min" target="_blank" rel="noopener" class="w-full md:w-auto px-8 py-4 bg-brand-primary text-white rounded-full font-bold shadow-2xl shadow-brand-primary/30 text-sm md:text-base">
+              Book Your Strategy Call
+            </a>
+            <a routerLink="/contact" class="w-full md:w-auto px-8 py-4 border-2 border-slate-200 dark:border-white/10 rounded-full font-bold text-sm md:text-base dark:text-white">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

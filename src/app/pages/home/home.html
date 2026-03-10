@@ -40,9 +40,6 @@
           Brandif is a London-based digital agency helping ambitious businesses scale through AI-driven solutions, performance marketing, and intelligent design.
         </p>
         
-        <p class="text-sm md:text-lg text-slate-500 dark:text-slate-500 max-w-lg mx-auto md:mx-0 italic">
-          Whether you're launching a new product, scaling operations, or transforming customer experience, we combine cutting-edge AI technology with proven digital strategies to deliver measurable results.
-        </p>
 
         <!-- Mobile-only Boxed Image -->
         <div data-aos="fade-up" data-aos-delay="250" class="block md:hidden mt-8 mb-4 rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-white/10 max-w-sm mx-auto">
@@ -62,7 +59,7 @@
   </section>
 
   <!-- Services Overview Section -->
-  <section class="py-16 md:py-24 bg-slate-50/50 dark:bg-[#03070d]/50 border-y border-slate-200 dark:border-white/5">
+  <section id="services" class="py-16 md:py-24 bg-slate-50/50 dark:bg-[#03070d]/50 border-y border-slate-200 dark:border-white/5">
     <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
       <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-10 md:mb-20 space-y-2 md:space-y-3">
         <h2 class="text-[10px] md:text-sm font-bold text-brand-primary uppercase tracking-[0.3em] md:tracking-widest">What We Do</h2>
@@ -171,31 +168,57 @@
     </div>
   </section>
 
-  <!-- Social Proof Section -->
-  <section data-aos="zoom-in" class="py-24 glass dark:glass-dark mx-4 md:mx-auto max-w-7xl rounded-[40px] border border-slate-200 dark:border-white/5 shadow-2xl overflow-hidden">
-    <div class="px-8 md:px-16 text-center space-y-12">
-      <div data-aos="fade-up" class="space-y-4">
-        <h2 class="text-sm font-bold text-brand-primary uppercase tracking-widest">Trusted by Growing Businesses</h2>
-        <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          From startups to established brands, we've helped businesses across sectors achieve digital growth through intelligent strategy and execution.
+  <!-- Team Section -->
+  <section class="py-24 md:py-32 relative overflow-hidden bg-white dark:bg-[#03070d]">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10">
+      <div data-aos="fade-up" class="text-center max-w-3xl mx-auto mb-16 md:mb-24 space-y-4">
+        <h2 class="text-[10px] md:text-sm font-bold text-brand-primary uppercase tracking-[0.3em] md:tracking-widest">Our Experts</h2>
+        <h3 class="text-2xl md:text-5xl font-extrabold text-slate-900 dark:text-white">The Minds Behind Brandif</h3>
+        <p class="text-sm md:text-lg text-slate-600 dark:text-slate-400 font-medium md:font-normal">
+          A dedicated team of strategists, developers, and creatives committed to your digital success.
         </p>
       </div>
-      
-      <!-- Client Logo Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-        <div class="flex justify-center p-4">Logo 1</div>
-        <div class="flex justify-center p-4">Logo 2</div>
-        <div class="flex justify-center p-4">Logo 3</div>
-        <div class="flex justify-center p-4">Logo 4</div>
-        <div class="flex justify-center p-4">Logo 5</div>
-        <div class="flex justify-center p-4">Logo 6</div>
-      </div>
-      
-      <div class="mt-12">
-        <a routerLink="/work" class="inline-flex items-center space-x-2 font-bold text-brand-primary">
-          <span>See Our Work</span>
-          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-        </a>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+        <!-- Team Member 1 -->
+        <div data-aos="fade-up" data-aos-delay="0" class="group relative">
+          <div class="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-6 border border-slate-200 dark:border-white/10">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Alex Rivera" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white">Alex Rivera</h4>
+          <p class="text-brand-primary text-sm font-bold uppercase tracking-wider">Creative Director</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div data-aos="fade-up" data-aos-delay="100" class="group relative">
+          <div class="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-6 border border-slate-200 dark:border-white/10">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=600" alt="Sarah Chen" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white">Sarah Chen</h4>
+          <p class="text-brand-secondary text-sm font-bold uppercase tracking-wider">AI Solutions Architect</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div data-aos="fade-up" data-aos-delay="200" class="group relative">
+          <div class="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-6 border border-slate-200 dark:border-white/10">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=600" alt="Marcus Thorne" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white">Marcus Thorne</h4>
+          <p class="text-blue-500 text-sm font-bold uppercase tracking-wider">Head of Development</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div data-aos="fade-up" data-aos-delay="300" class="group relative">
+          <div class="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-6 border border-slate-200 dark:border-white/10">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" alt="Elena Gomez" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-indigo-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white">Elena Gomez</h4>
+          <p class="text-indigo-500 text-sm font-bold uppercase tracking-wider">Strategic Marketing Lead</p>
+        </div>
       </div>
     </div>
   </section>

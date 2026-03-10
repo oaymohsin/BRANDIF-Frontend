@@ -20,9 +20,11 @@ import { BookConsultationComponent } from './pages/contact/book-consultation/boo
 import { PrivacyComponent } from './pages/legal/privacy/privacy';
 import { CookiesComponent } from './pages/legal/cookies/cookies';
 import { TermsComponent } from './pages/legal/terms/terms';
+import { ServicesListComponent } from './pages/services/services-list/services-list';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'services', component: ServicesListComponent },
   { path: 'services/ai-voice-agents', component: AiVoiceAgentsComponent },
   { path: 'services/ai-chatbots', component: AiChatbotsComponent },
   { path: 'services/web-app-development', component: WebAppDevelopmentComponent },
@@ -46,7 +48,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

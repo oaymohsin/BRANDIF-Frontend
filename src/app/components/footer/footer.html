@@ -22,10 +22,12 @@
       <div>
         <h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-slate-900 dark:text-white">Services</h4>
         <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+          <li><a routerLink="/services/web-app-development" class="hover:text-brand-primary transition-colors">Web</a></li>
+          <li><a routerLink="/services/seo-services" class="hover:text-brand-primary transition-colors">SEO</a></li>
+          <li><a routerLink="/services/social-media-marketing" class="hover:text-brand-primary transition-colors">SMM</a></li>
           <li><a routerLink="/services/ai-voice-agents" class="hover:text-brand-primary transition-colors">AI Voice Agents</a></li>
-          <li><a routerLink="/services/ai-chatbots" class="hover:text-brand-primary transition-colors">AI Chatbots</a></li>
-          <li><a routerLink="/services/web-app-development" class="hover:text-brand-primary transition-colors">Web & App Development</a></li>
-          <li><a routerLink="/services/seo-services" class="hover:text-brand-primary transition-colors">SEO Services</a></li>
+          <li><a routerLink="/services/design-branding" class="hover:text-brand-primary transition-colors">Brand Building</a></li>
+          <li><a routerLink="/services" class="hover:text-brand-primary transition-colors">Video Editing</a></li>
         </ul>
       </div>
 
@@ -35,17 +37,15 @@
           <li><a routerLink="/about" class="hover:text-brand-primary transition-colors">About Us</a></li>
           <li><a routerLink="/work" class="hover:text-brand-primary transition-colors">Our Work</a></li>
           <li><a routerLink="/insights" class="hover:text-brand-primary transition-colors">Insights</a></li>
-          <li><a routerLink="/careers" class="hover:text-brand-primary transition-colors">Careers</a></li>
         </ul>
       </div>
 
       <div>
         <h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-slate-900 dark:text-white">Resources</h4>
         <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
-          <li><a routerLink="/faqs" class="hover:text-brand-primary transition-colors">FAQs</a></li>
+          <li><a [routerLink]="['/contact']" fragment="faqs" class="hover:text-brand-primary transition-colors">FAQs</a></li>
           <li><a routerLink="/contact" class="hover:text-brand-primary transition-colors">Contact</a></li>
           <li><a routerLink="/privacy" class="hover:text-brand-primary transition-colors">Privacy Policy</a></li>
-          <li><a routerLink="/privacy/cookies" class="hover:text-brand-primary transition-colors">Cookie Policy</a></li>
           <li><a routerLink="/terms" class="hover:text-brand-primary transition-colors">Terms of Service</a></li>
         </ul>
       </div>
@@ -54,8 +54,6 @@
     <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
       <p>&copy; {{ currentYear }} BRANDIF Digital Agency. All rights reserved.</p>
       <div class="flex space-x-6 mt-4 md:mt-0">
-        <a href="#" class="hover:text-brand-primary transition-colors">Cookies</a>
-        <a href="#" class="hover:text-brand-primary transition-colors">Sitemap</a>
       </div>
     </div>
   </div>
