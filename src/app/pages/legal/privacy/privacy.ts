@@ -33,7 +33,7 @@ import { Component } from '@angular/core';
             <!-- Introduction -->
             <div class="prose prose-lg prose-slate dark:prose-invert max-w-none">
               <p class="text-xl leading-relaxed text-slate-700 dark:text-slate-300 font-medium">
-                Brandif ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                Brandif (the trading name of Enatingal Ltd., "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
               </p>
               <p>We comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
             </div>
@@ -137,7 +137,7 @@ import { Component } from '@angular/core';
                 <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white text-center space-y-4">
                    <h4 class="text-xl font-black">Exercise Your Rights</h4>
                    <p class="text-white/60 text-sm max-w-md mx-auto">To exercise these rights, or if you have any questions about this policy, please contact us.</p>
-                   <a href="mailto:privacy@brandif.co.uk" class="inline-block text-brand-primary font-black text-lg hover:scale-105 transition-transform">privacy@brandif.co.uk</a>
+                   <a href="mailto:info@brandif.co.uk" class="inline-block text-brand-primary font-black text-lg hover:scale-105 transition-transform">info@brandif.co.uk</a>
                 </div>
               </div>
 

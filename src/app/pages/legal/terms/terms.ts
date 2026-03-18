@@ -49,7 +49,7 @@ import { Component } from '@angular/core';
                 <!-- Intro -->
                 <div class="prose prose-xl prose-slate dark:prose-invert max-w-none">
                   <p class="font-medium text-slate-700 dark:text-slate-300">
-                    These Terms and Conditions ("Terms") govern your use of the Brandif website and services. By accessing our website or engaging our services, you agree to these Terms. Brandif is registered in England and Wales.
+                    These Terms and Conditions ("Terms") govern your use of the Brandif website and services. By accessing our website or engaging our services, you agree to these Terms. Brandif is the trading name of Enatingal Ltd., registered in England and Wales.
                   </p>
                 </div>
 
@@ -81,12 +81,12 @@ import { Component } from '@angular/core';
                 <div class="pt-16 border-t border-slate-200 dark:border-white/10 text-center space-y-6">
                   <h3 class="text-2xl font-black text-slate-900 dark:text-white">Questions About These Terms?</h3>
                   <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                    <a href="mailto:legal@brandif.co.uk" class="flex items-center space-x-3 px-8 py-4 bg-brand-primary text-white rounded-xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform">
-                      <span>legal@brandif.co.uk</span>
+                    <a href="mailto:info@brandif.co.uk" class="flex items-center space-x-3 px-8 py-4 bg-brand-primary text-white rounded-xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform">
+                      <span>info@brandif.co.uk</span>
                     </a>
                     <div class="text-left text-xs text-slate-500">
                       <p class="font-black uppercase tracking-widest mb-1">Postal Address</p>
-                      <p>Brandif, London, United Kingdom</p>
+                      <p>Brandif, Greater London, United Kingdom</p>
                     </div>
                   </div>
                 </div>

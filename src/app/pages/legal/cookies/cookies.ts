@@ -87,7 +87,7 @@ import { Component } from '@angular/core';
             <div class="p-10 rounded-[3rem] bg-brand-primary text-white text-center space-y-4 shadow-2xl shadow-brand-primary/20">
                <h4 class="text-2xl font-black">Questions About Cookies?</h4>
                <p class="text-white/80 font-medium">We're happy to clarify how our technology works.</p>
-               <a href="mailto:privacy@brandif.co.uk" class="inline-block px-8 py-4 bg-white text-brand-primary rounded-xl font-black text-sm uppercase tracking-widest hover:scale-105 transition-transform">Contact Privacy Team</a>
+               <a href="mailto:info@brandif.co.uk" class="inline-block px-8 py-4 bg-white text-brand-primary rounded-xl font-black text-sm uppercase tracking-widest hover:scale-105 transition-transform">Contact Privacy Team</a>
             </div>
 
           </div>

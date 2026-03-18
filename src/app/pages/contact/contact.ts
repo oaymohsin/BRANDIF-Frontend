@@ -24,7 +24,7 @@ export class ContactComponent {
       answer: 'Yes, all projects proceed under clear written agreements. Deposits vary by project size, typically 30-50% to commence work.'
     },
     {
-      question: 'Can you work with clients outside London?',
+      question: 'Can you work with clients outside Greater London?',
       answer: 'Absolutely. We work with clients throughout the UK and internationally.'
     }
   ];
